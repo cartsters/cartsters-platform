@@ -13,5 +13,5 @@ steps:
 - task: CopyFiles@2
   inputs:
     Contents: '**'
-    TargetFolder: '$(build.artifactstagingdirectory)/Terraform'
+    TargetFolder: '$(build.artifactstagingdirectory)'
     CleanTargetFolder: true
