@@ -8,8 +8,13 @@ trigger:
 
 pool:
   vmImage: 'ubuntu-latest'
+  
 
 steps:
+- task: CopyFiles@2
+  inputs:
+    Contents: '**'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)/Terraform'
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
