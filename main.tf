@@ -1,3 +1,7 @@
+terraform {
+  backend "locals" {}
+}
+
 provider "azurerm" {
   features {}
 }
