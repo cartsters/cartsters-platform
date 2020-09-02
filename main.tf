@@ -1,5 +1,5 @@
 terraform {
-  backend "locals" {}
+  backend "local" {}
 }
 
 provider "azurerm" {
