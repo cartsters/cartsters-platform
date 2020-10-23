@@ -27,3 +27,10 @@ terraform apply "out.plan"
 ```
 
 The application also contain scripts to easily deallocate and start vmss, making it easier to avoid undesired costs.
+
+To turn on and off vmss from azure, the repo provides two scripts: start-vmss.sh and deallocate-vmss.sh.
+
+```
+./startvmss.sh
+./deallocate-vmss.sh
+```
