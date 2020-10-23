@@ -2,7 +2,7 @@ variable "client_id" {}
 variable "client_secret" {}
 
 variable "agents_count" {
-    default = 3
+    default = 4
 }
 
 variable "agents_size" {
